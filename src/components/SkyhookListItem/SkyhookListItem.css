@@ -10,10 +10,17 @@
   border-bottom: none;
 }
 
+.skyhook-item-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .skyhook-item-name {
   font-size: 0.9rem;
   color: #e0e0e0;
   font-weight: 500;
+  flex: 1;
 }
 
 .skyhook-item-name--clickable {
@@ -22,6 +29,29 @@
 
 .skyhook-item-name--clickable:hover {
   color: #FF6B00;
+}
+
+.skyhook-item-copy {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  color: #555577;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skyhook-item-copy:hover {
+  color: #e0e0e0;
+}
+
+.skyhook-item-copy svg {
+  width: 14px;
+  height: 14px;
 }
 
 .skyhook-item-region {
