@@ -1,0 +1,73 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-map-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 12px;
+  gap: 8px;
+  min-height: 0;
+}
+
+.app-map-panel > :last-child {
+  flex: 1;
+  min-height: 0;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #FF6B00;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.region-title {
+  margin: 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+  flex-shrink: 0;
+}
+
+.back-button {
+  background: none;
+  border: 1px solid #2a2a4a;
+  color: #8888aa;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.back-button:hover {
+  color: #e0e0e0;
+  border-color: #FF6B00;
+}
+
+.app-sidebar {
+  border-left: 1px solid #2a2a4a;
+  overflow-y: auto;
+  background: #12121f;
+  padding-top: 36px;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh 1fr;
+    height: auto;
+  }
+
+  .app-sidebar {
+    border-left: none;
+    border-top: 1px solid #2a2a4a;
+    max-height: 40vh;
+  }
+}

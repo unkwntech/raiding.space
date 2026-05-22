@@ -1,0 +1,46 @@
+.svg-map-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.svg-map-container svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.svg-map-container .raidable-highlight {
+  fill: #FF6B00 !important;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.svg-map-container .raidable-highlight:hover {
+  opacity: 1;
+}
+
+.svg-map-container .system-flash {
+  animation: system-flash 1s ease-out;
+}
+
+@keyframes system-flash {
+  0%   { filter: brightness(3) drop-shadow(0 0 8px #fff); }
+  60%  { filter: brightness(2) drop-shadow(0 0 6px #fff); }
+  100% { filter: none; }
+}
+
+.svg-map-loading,
+.svg-map-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #8888aa;
+  font-size: 0.9rem;
+}
+
+.svg-map-error {
+  color: #ff4444;
+}

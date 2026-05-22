@@ -1,0 +1,39 @@
+.skyhook-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.skyhook-item:last-child {
+  border-bottom: none;
+}
+
+.skyhook-item-name {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.skyhook-item-name--clickable {
+  cursor: pointer;
+}
+
+.skyhook-item-name--clickable:hover {
+  color: #FF6B00;
+}
+
+.skyhook-item-region {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #FF6B00;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.skyhook-item-region:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"e:\\\\raiding.space\" -Force)",
+      "Bash(Select-Object Name, Mode)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Sort-Object PSIsContainer -Descending)",
+      "Bash(git -C \"e:/raiding.space\" log --oneline)",
+      "Bash(git -C \"e:/raiding.space\" status)",
+      "Bash(git -C \"e:/raiding.space\" branch -a)",
+      "Bash(git config *)",
+      "Bash(git fetch *)",
+      "Bash(git show-ref *)",
+      "WebFetch(domain:evemaps.dotlan.net)",
+      "WebFetch(domain:esi.evetech.net)",
+      "Bash(curl -s \"https://esi.evetech.net/latest/universe/regions/\")",
+      "Bash(python3 -c ' *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node scripts/download-maps.mjs)",
+      "Bash(sed -n '78,100p' \"e:/raiding.space/public/maps/The_Forge.dark.svg\")",
+      "Bash(sed -n '1308,1360p' \"e:/raiding.space/public/maps/The_Forge.dark.svg\")",
+      "Bash(curl -sI -H \"X-Compatibility-Date: 2026-05-19\" \"https://esi.evetech.net/skyhooks/raidable\")",
+      "Bash(curl -sI -H \"X-Compatibility-Date: 2026-05-19\" -X GET \"https://esi.evetech.net/skyhooks/raidable\")",
+      "Bash(curl -sI \"https://esi.evetech.net/latest/universe/systems/30000142/\")"
+    ]
+  }
+}

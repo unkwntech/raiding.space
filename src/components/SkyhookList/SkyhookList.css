@@ -1,0 +1,51 @@
+.skyhook-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skyhook-list-grouped {
+  display: flex;
+  flex-direction: column;
+}
+
+.skyhook-region-group {
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.skyhook-region-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #1a1a2e;
+  border: none;
+  padding: 8px 12px;
+  color: #FF6B00;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.skyhook-region-heading:hover {
+  background: #22223a;
+}
+
+.skyhook-region-count {
+  background: #FF6B00;
+  color: #0d0d0d;
+  border-radius: 10px;
+  padding: 1px 7px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.skyhook-list-empty {
+  padding: 24px;
+  color: #8888aa;
+  text-align: center;
+  font-size: 0.9rem;
+}
